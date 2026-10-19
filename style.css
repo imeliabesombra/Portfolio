@@ -1,0 +1,43 @@
+:root {
+    --fosforo: #ffb000;
+    --fosforo-brilho: rgba(255,176, 0, 0.4);
+    --fundo: #0a0602;
+    --texto-escuro: #120a02;
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+    background-color: var(--fundo);
+    color: var(--fosforo);
+    font-family: 'VT323'; monospace;
+    font-size: 24px;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'Press Start 2P', monospace;
+    font-weight: 400;
+    font-size: 40px;
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: var(--fosforo);
+    color: var(--texto-escuro);
+}
+
+nav a {
+    color: var(--fosforo);
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+li::before {
+    content: "▪ ";
+}
