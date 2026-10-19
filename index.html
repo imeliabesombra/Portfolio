@@ -1,46 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
-    <title>Eliabe Sombra | Desenvolvedor Full-Stack</title>
-    <link rel="preconnect" href="https://font.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="color=scheme" content="light dark">
+        <title>Eliabe Sombra | Desenvolvedor Full-Stack</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-    <header>
-        <span class="logo">SOMBRA-OS // tty1</span>
-        <nav>
-            <a href="#inicio">./início</a>
-            <a href="#sobre">./sobre</a>
-            <a href="#habilidades">./habilidades</a>
-            <a href="#projetos">./projetos</a>
-            <a href="#contato">./contato</a>
-        </nav>
-    </header>
+    <body>
+        <header class="superior">
+            <a href="#inicio" class="logo">
+                <span class="logo-selo">ES</span>
+                <span class="logo-texto">E.SOMBRA <small>/ PORTFÓLIO</small></span>
+            </a>
+            <div class="superior-direito">
+                <nav class="menu" aria-label="Navegação principal">
+                    <a href="#inicio" class="tecla ativa" aria-current="page"><small>01</small>INÍCIO</a>
+                    <a href="#sobre" class="tecla"><small>02</small>SOBRE</a>
+                    <a href="#habilidades" class="tecla"><small>03</small>HABILIDADES</a>
+                    <a href="#projetos" class="tecla"><small>04</small>PROJETOS</a>
+                    <a href="#contato" class="tecla"><small>05</small>CONTATO</a>
+                </nav>
+                <button type="button" class="tecla tecla-tema" id="botao-tema">
+                    <small>◐</small>ESCURO
+                </button>
+            </div>
+        </header>
 
-    <main id="inicio">
-        <section class="apresentacao">
-            <p class="saudacao">Hello, World!</p>
-            <p>Eu sou</p>
-            <h1>Eliabe Sombra</h1>
-            <ul>
-                <li>Desenvolvedor Full-Stack</li>
-            </ul>
-        </section>
+        <main id="inicio" class="hero">
+            <section class="apresentacao">
+                <p class="etiqueta">&gt; Hello, World!</p>
+                <p class="eu-sou">Eu sou</p>
+                <h1 class="nome">
+                    <span>ELIABE</span>
+                    <span class="nome-destaque">SOMBRA.</span>
+                </h1>
+                <ul class="especialidades">
+                    <li class="especialidade1">Desenvolvedor Full-Stack</li>
+                    <li class="rosa">[Indefinido]</li>
+                </ul>
+                <div class="botoes">
+                    <a href="#projetos" class="botao-projetos">VER PROJETOS →</a>
+                    <a href="#contato" class="botao-contato">FALE COMIGO →</a>
+                </div>
+            </section>
 
-        <section class="retrato">
-            <!----> A imagem será implementada aqui em breve.
-        </section>
-    </main>
+            <div class="foto">
+                <figure class="janela">
+                    <div class="janela-superior">
+                        <span aria-hidden="true">○ □ ⊠</span>
+                        <span class="janela-titulo">EU.JPG</span>
+                    </div>
+                    <img src=""img/eu.jpg" alt="Foto de Eliabe Sombra">
+                    <figcaption>
+                        <span>[Indefinido]</span>
+                        <span>[Indefinido]</span>
+                    </figcaption>
+                </figure>
 
-    <footer>
-        <p>Bem-vindo ao SOMBRA-OS 1.0 LTS</p>
-        <p>→ role a página ou digite "ajuda" para começar</p>
-        <p>eliabe@portfolio:~$ <span class="cursor"></span></p>
-    </footer>
-</body>
+                <dl class="numeros">
+                    <div><dt>EXPERIÊNCIA</dt><dd>[X] TEMPO</dd></div>
+                    <div><dt>PROJETOS</dt><dd>[N]</dd></div>
+                    <div class="rosa"><dt>STACK</dt><dd>[TECH]</dd></div>
+                </dl>
+            </div>
+        </main>
+
+        <a href="#sobre" class="role">ROLE PARA EXPLORAR <span aria-hidden="true">↓</span></a>
+        
+    </body>
 </html>
