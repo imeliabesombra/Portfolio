@@ -14,9 +14,16 @@
 body {
     background-color: var(--fundo);
     color: var(--fosforo);
-    font-family: 'VT323'; monospace;
+    font-family: 'VT323', monospace;
     font-size: 24px;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 40px 64px;
 }
 
 h1 {
@@ -27,6 +34,7 @@ h1 {
     padding: 10px 16px;
     background-color: var(--fosforo);
     color: var(--texto-escuro);
+    align-self: flex-start;
 }
 
 nav a {
@@ -40,4 +48,40 @@ ul {
 
 li::before {
     content: "▪ ";
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 18px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+}
+
+.apresentacao {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.retrato {
+    flex: 1;
+    min-height: 400px;
+    border: 1px dashed var(--fosforo);
+}
+
+footer {
+    flex: 1;
+    flex-direction: column;
+    gap: 4px;
 }
