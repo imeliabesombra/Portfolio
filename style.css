@@ -142,3 +142,127 @@ a {
 .tecla-tema {
     background-color: var(--rosa);
 }
+
+.hero {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 48px 56px 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px 56px;
+}
+
+.apresentacao {
+    flex: 999 1 520px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+.etiqueta {
+    padding: 8px 14px;
+    border: 3px solid var(--tinta);
+    background-color: var(--cartao);
+    color: var(--texto);
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: 4px 4px 0 var(--tinta);
+    transform: rotate(-2deg);
+    margin-bottom: 10px;
+}
+
+.eu-sou {
+    font-weight: 500;
+    font-size: clamp(20px, 2vw, 20px);
+}
+
+.nome {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    font-family: 'Silkscreen', monospace;
+    font-weight: 700;
+    font-size: clamp(48px, 7.2vw, 108px);
+    line-height: 0.95;
+    letter-spacing: -0.2em;
+}
+
+.nome-destaque {
+    padding: 4px 16px 10px;
+    border: 3px solid var(--tinta);
+    background-color: var(--cartao);
+    color: var(--texto);
+    box-shadow: 6px 6px 0 var(--tinta);
+}
+
+.especialidades {
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.especialidades li {
+    padding: 10px 16px;
+    border: 3px solid var(--tinta);
+    font-weight: 700;
+    font-size: clamp(15px, 1.4vw, 19px);
+}
+
+.especialidade1 {
+    background-color: var(--destaque);
+    color: var(--destaque-texto);
+}
+
+.rosa {
+    background-color: var(--rosa);
+    color: var(--destaque-texto);
+}
+
+.botoes {
+    margin-top: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px
+}
+
+.botao {
+    display: inline-flex;
+    align-items: center;
+    min-height: 52px;
+    padding: 0 22px;
+    border: 3px solid var(--tinta);
+    background-color: var(--cartao);
+    color: var(--texto);
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.06em;
+    box-shadow: 6px 6px 0 var(--tinta);
+    transition: transform 0.12s, box-shadow 0.12s;
+}
+
+.botao:hover {
+    transform: translate(-2px, 2px);
+    box-shadow: 8px 8px 0 var(--tinta)
+}
+
+.botao:active {
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 0 var(--tinta);
+}
+
+.botao-projetos {
+    background-color: var(--destaque);
+    color: var(--destaque-texto);
+}
+
+.foto {
+    flex: 1 1 340px;
+    min-width: 0;
+    max-width: 480px;
+}
