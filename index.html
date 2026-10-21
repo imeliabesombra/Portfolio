@@ -4,11 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="color=scheme" content="light dark">
-        <title>Eliabe Sombra | Desenvolvedor Full-Stack</title>
+        <title>Eliabe Sombra | Portfólio</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+        <script>
+            if (localStorage.getItem('tema') === 'escuro') {
+                document.documentElement.setAttribute('data-tema', 'escuro');
+            }
+        </script>
     </head>
 
     <body>
@@ -25,8 +30,9 @@
                     <a href="#projetos" class="tecla"><small>04</small>PROJETOS</a>
                     <a href="#contato" class="tecla"><small>05</small>CONTATO</a>
                 </nav>
-                <button type="button" class="tecla tecla-tema" id="botao-tema">
-                    <small>◐</small>ESCURO
+                <button type="button" class="tecla tecla-tema" id="botao-tema" aria-label="Mudar para o tema escuro">
+                    <small aria-hidden="true">◐</small>
+                    <span id="texto-tema">ESCURO</span>
                 </button>
             </div>
         </header>
@@ -40,7 +46,7 @@
                     <span class="nome-destaque">SOMBRA.</span>
                 </h1>
                 <ul class="especialidades">
-                    <li class="especialidade1">Desenvolvedor Full-Stack</li>
+                    <li class="especialidade1">Desenvolvedor em formação</li>
                     <li class="rosa">[Indefinido]</li>
                 </ul>
                 <div class="botoes">
@@ -71,6 +77,6 @@
         </main>
 
         <a href="#sobre" class="role">ROLE PARA EXPLORAR <span aria-hidden="true">↓</span></a>
-        
+        <script src="script.js"></script>
     </body>
 </html>
